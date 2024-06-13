@@ -42,6 +42,7 @@ public class Email {
         System.out.print("Enter Department code: ");
         Scanner in = new Scanner(System.in);
         int deptChoice = in.nextInt();
+        in.close();
         if (deptChoice == 1) {
             return "Sales";
         } else if (deptChoice == 2) {
@@ -89,6 +90,7 @@ public class Email {
                 "\nCompany Email: " + email +
                 "\nMailbox Capacity: " + mailboxCapacity + "gb";
     }
+    
 
 
 
